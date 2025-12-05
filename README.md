@@ -34,7 +34,7 @@ The controller observes queue length, route congestion, time of day, and weather
 - **State (6D):**  
   `[queue_norm, congA(tanh), congB(tanh), congC(tanh), time_norm, weather]`
 - **Reward:** negative cost (so values are typically **negative**)  
-  Reward is the negative of total cost (taxi time + queue holding + congestion), so rewards are negative; less negative is better.
+  `Reward =  -(taxi time + queue holding + congestion)`, so rewards are negative; less negative is better.
   Higher reward = **less negative** = better.
 
 ---
